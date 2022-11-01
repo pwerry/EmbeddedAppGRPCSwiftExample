@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package ipcExample;
+
+message BidirectionalStreamRequest {}
+message BidirectionalStreamResponse {}
+
+service IPCExampleService {
+  rpc bidirectionalStream(stream BidirectionalStreamRequest) returns (stream BidirectionalStreamResponse) {}
+}
