@@ -21,6 +21,16 @@
 		D0716C5829102B9A00F8CD22 /* EmbeddedApp.app in Embed */ = {isa = PBXBuildFile; fileRef = D0716C34291024F000F8CD22 /* EmbeddedApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D06AD1A72911751000B2AAB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0716C03291024AC00F8CD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0716C33291024F000F8CD22;
+			remoteInfo = EmbeddedApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D0716C5729102B8B00F8CD22 /* Embed */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -184,6 +194,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D06AD1A82911751000B2AAB5 /* PBXTargetDependency */,
 			);
 			name = HostApp;
 			packageProductDependencies = (
@@ -295,6 +306,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D06AD1A82911751000B2AAB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0716C33291024F000F8CD22 /* EmbeddedApp */;
+			targetProxy = D06AD1A72911751000B2AAB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D0716C18291024AD00F8CD22 /* Debug */ = {
